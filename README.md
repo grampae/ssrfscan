@@ -9,7 +9,7 @@ Usage: python3 ssrfscan.py -s https://ssrf.vulnerable.site/?url= -m http:// -t 1
 - -m method of payload request such as http://, gopher://, netdoc:///, \\ etc
 - -t the target that is being port scanned
 - -f the file at target that is being grabbed, for image based ssrf think files that are common like favicon.ico etc
-- -p ports to scan, currently defaults to 21,22,23,25,53,80,110,111,135,139,143,443,445,993,995,1723,3306,3389,5900,8080
+- -p comma seperated ports to scan, currently defaults to 21,22,23,25,53,80,110,111,135,139,143,443,445,993,995,1723,3306,3389,5900,8080
 - -b base64 encode the payload, this is everything after the -s flag
 
 Reponses should look similar to the following depending on the ssrf and environments
