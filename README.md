@@ -3,7 +3,7 @@ Modular ssrf port scanner with response codes and timing.
 
 ![Screenshot from 2022-03-30 10-03-54](https://user-images.githubusercontent.com/36344197/160858502-a61b39b5-5ede-43b7-b59d-b749a9119e0b.png)
 
-Usage: python3 ssrfscan.py -s https://ssrf.vulnerable.site/?url= -m \\ -t 127.0.0.1 -f /favicon.ico -p 80,443,31337,8080
+Usage: python3 ssrfscan.py -s https://ssrf.vulnerable.site/?url= -m http:// -t 127.0.0.1 -f /favicon.ico -p 80,443,31337,8080
 
 - -s site that is vulnerable to ssrf up to the point where the payload is introduced.
 - -m method of payload request such as http://, gopher://, netdoc:///, \\ etc
