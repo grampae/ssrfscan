@@ -1,6 +1,6 @@
 # ssrfscan
 Modular ssrf port scanner with response codes and timing.  
-If response returns content and has a statis code of 200, it will show that url for further investigation.
+If response returns content and has a status code of 200, it will show that url for further investigation.
 
 ![Screenshot from 2022-03-31 08-26-02](https://user-images.githubusercontent.com/36344197/161054314-5327de14-d55c-46db-a98f-c9fe6d502653.png)
 
