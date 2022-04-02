@@ -8,7 +8,7 @@ If response returns content and has a status code of 200, it will show that url 
 Example usage: python3 ssrfscan.py -s https://ssrf.vulnerable.site/?url= -c http:// -t 127.0.0.1 -p 80,443,31337,8080 -u /favicon.ico -e b64 -b
 
 - -s site that is vulnerable to ssrf up to the point where the payload is introduced
-- -c method of payload request such as http://, gopher://, netdoc:///, \\\ etc
+- -c scheme of payload request such as http://, gopher://, netdoc:///, \\\ etc
 - -t the target that is being port scanned
 - -u target path to request, for image based ssrf think files that are common like favicon.ico etc
 - -p comma seperated ports to scan, currently defaults to 21,22,23,25,53,80,110,111,135,139,143,443,445,993,995,1723,3306,3389,5900,8080
