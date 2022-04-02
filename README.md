@@ -1,5 +1,5 @@
 # ssrfscan
-Modular ssrf port scanner that takes input from cli.
+Modular ssrf port scanner that takes input from cli.\n
 Output is shown as status code and time to complete request.
 If response returns content and has a status code of 200, it will show that url for further investigation.
 
