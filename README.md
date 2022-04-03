@@ -3,7 +3,8 @@ Modular ssrf port scanner that takes input from cli.
 Output is shown as status code and time to complete request.  
 If response returns content and has a status code of 200, it will show that url for further investigation.  
 
-![Screenshot from 2022-03-31 08-26-02](https://user-images.githubusercontent.com/36344197/161054314-5327de14-d55c-46db-a98f-c9fe6d502653.png)
+![Screenshot from 2022-04-03 18-04-26](https://user-images.githubusercontent.com/36344197/161451602-0c5c4240-3482-4fb5-8f49-38db746e0ec5.png)
+
 
 Example usage: python3 ssrfscan.py -s https://ssrf.vulnerable.site/?url= -c http:// -t 127.0.0.1 -p 80,443,31337,8080 -u /favicon.ico -e b64 -b
 
