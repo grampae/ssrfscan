@@ -10,7 +10,7 @@ If response returns content and has a status code of 200, it will show that url 
 *Set site vulnerable to ssrf with -ss , http://127.0.0.1/favicon.ico will be requested on ports 80,443,31337,8080, base64 encoded, and proxied through burp*  
 - Example: ssrfscan.py -f getreq2.txt -t 127.0.0.1 -u /someplace/special.svg -s http:// -e url  
 *Request burp saved request file (must define insertion point as 'ssrf'), port scan http://127.0.0.1/someplace/special.svg, url encoded*  
-- Example: ssrfscan.py -sss 'https://epaper.ajc.com/html5/Newsday/getatex.aspx?url=http://127.0.0.1:*/index.html' -p 22,21  
+- Example: ssrfscan.py -sss 'https://somevulnerable.site/afile.aspx?url=http://127.0.0.1:*/index.html' -p 22,21  
 *Simple method, provide whole ssrf url including target, define port location with '*'
 
 
